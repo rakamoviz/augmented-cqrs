@@ -1,0 +1,19 @@
+{
+  "name": "augmented-cqrs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "cqrs-domain": "git+https://git@github.com/rakamoviz/node-cqrs-domain.git",
+    "cqrs-saga": "git+https://git@github.com/rakamoviz/node-cqrs-saga.git",
+    "deepmerge": "^3.2.0",
+    "redis": "^2.8.0",
+    "uuid": "^3.3.2"
+  },
+  "license": "ISC"
+}

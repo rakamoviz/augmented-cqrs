@@ -1,0 +1,46 @@
+{
+  "_args": [
+    [
+      "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git",
+      "/home/rcokorda/Projects/Sandbox/new-cqrs/taxman-cqrs-example-app"
+    ]
+  ],
+  "_from": "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git",
+  "_id": "taxman-cqrs@git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git#d308427de21e23f59952af561af99ed6d4840d11",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/taxman-cqrs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git",
+    "rawSpec": "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git",
+    "saveSpec": "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git",
+    "fetchSpec": "https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/taxman-cqrs-example-domain",
+    "/taxman-cqrs-example-saga"
+  ],
+  "_resolved": "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git#d308427de21e23f59952af561af99ed6d4840d11",
+  "_spec": "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/taxman-cqrs.git",
+  "_where": "/home/rcokorda/Projects/Sandbox/new-cqrs/taxman-cqrs-example-app",
+  "author": "",
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "cqrs-domain": "git+https://git@github.com/rakamoviz/node-cqrs-domain.git",
+    "cqrs-saga": "git+https://git@github.com/rakamoviz/node-cqrs-saga.git",
+    "deepmerge": "^3.2.0",
+    "redis": "^2.8.0",
+    "uuid": "^3.3.2"
+  },
+  "description": "",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "taxman-cqrs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

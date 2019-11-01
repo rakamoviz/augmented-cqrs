@@ -1,0 +1,52 @@
+https://stackoverflow.com/questions/13489829/cqrs-sagas-did-i-understand-them-right
+saga only accepts events, not commands
+
+https://github.com/MicrosoftArchive/cqrs-journey/wiki/Glos-saga
+Describes a flow of work across multiple Bounded contexts.
+vs
+Coordinates interactions between aggregates within a bounded context.
+
+https://docs.microsoft.com/en-us/previous-versions/msp-n-p/jj591572(v=pandp.10)
+
+https://docs.microsoft.com/en-us/previous-versions/msp-n-p/jj591569(v%3dpandp.10)
+Typically, commands are sent within a bounded context. Events may have subscribers in the same bounded context as where they are published, or in other bounded contexts.
+
+In a complex system that you have modeled using aggregates and bounded contexts, there may be some business processes that involve multiple aggregates, or multiple aggregates in multiple bounded contexts. In these business processes multiple messages of different types are exchanged by the participating aggregates. 
+
+
+YES, so it must be cross BC.
+
+https://github.com/adrai/node-cqrs-saga/issues/44
+https://github.com/adrai/node-cqrs-domain/issues/143
+
+https://groups.google.com/forum/#!topic/dddcqrs/tRUKojSSUfw
+
+https://www.youtube.com/watch?v=7kX3fs0pWwc&t=2769s
+https://www.youtube.com/watch?v=YPbGW3Fnmbc
+
+
+=================
+
+TODOS:
+
+1. Pull style read-side view builder.
+
+https://www.youtube.com/watch?v=xIB_VQVVWKk
+https://realtimeboard.com/app/board/o9J_kxhJQfw=/
+https://stackoverflow.com/questions/55273445/distinct-event-based-on-how-it-was-created
+https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing
+https://en.wikipedia.org/wiki/Event_storming
+https://github.com/wwerner/event-storming-cheatsheet
+
+https://realtimeboard.com/app/board/o9J_kxhJQfw=/
+
+
+========================
+
+
+      queueTimeout: 1000,
+      queueTimeoutMaxLoops: 3,
+
+tactics: increase the queueTimeoutMaxLoops, and at the same time decrease the queueTimeout.
+This will make the queue check the redis more aggresviely, without affecting the total time waiting
+until it emits onMissingEvent
