@@ -12,7 +12,7 @@
     "cqrs-domain": "git+https://git@github.com/rakamoviz/node-cqrs-domain.git",
     "cqrs-saga": "git+https://git@github.com/rakamoviz/node-cqrs-saga.git",
     "deepmerge": "^3.2.0",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "uuid": "^3.3.2"
   },
   "license": "ISC"
